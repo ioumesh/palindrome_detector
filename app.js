@@ -3,10 +3,12 @@ const reset = document.getElementById("btn1");
 let str = document.getElementById("input1");
 let err = document.getElementById("error");
 let result = document.getElementById("para");
-data.addEventListener("click", () => {
+data.addEventListener("click", (e) => {
+  e.preventDefault();
   checker();
 });
 reset.addEventListener("click", (e) => {
+  e.preventDefault();
   str.value = "";
   result.style.display = "none";
   err.style.display = "none";
