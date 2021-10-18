@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 250px;
+  flex-direction: column;
 }
 #main {
   display: flex;
@@ -32,10 +33,10 @@ body {
   border: none;
   margin-bottom: 15px;
 }
-#input1:focus{
-    outline: none;
-    border-bottom:1px solid grey;
-    width:200px;
+#input1:focus {
+  outline: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
 }
 
 #btn {
@@ -58,19 +59,25 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.btnContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#para{
+#para {
   color: tomato;
   margin-top: 10px;
   display: none;
 }
-#error{
-    color: coral;
-    display: none;
-    margin-bottom: 15px;
+#error {
+  color: coral;
+  display: none;
+  margin-bottom: 15px;
 }
+.forkConatiner img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
